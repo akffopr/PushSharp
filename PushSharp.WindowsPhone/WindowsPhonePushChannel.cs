@@ -60,7 +60,7 @@ namespace PushSharp.WindowsPhone
 			if (wpNotification is WindowsPhoneToastNotification)
 				wr.Headers.Add("X-WindowsPhone-Target", "toast");
 			else if (wpNotification is WindowsPhoneTileNotification)
-				wr.Headers.Add("X-WindowsPhone-Target", "Tile");
+				wr.Headers.Add("X-WindowsPhone-Target", "token");
 
 			var payload = wpNotification.PayloadToString();
 
